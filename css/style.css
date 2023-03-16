@@ -81,6 +81,17 @@ h2 {
   text-decoration: none;
 }
 /* ==========main-HEADER====================== */
+.main-page-logo,
+.main-logo-nav {
+  display: flex;
+}
+
+.main-page-logo {
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .hero {
   text-align: center;
 
@@ -96,6 +107,8 @@ h2 {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   width: 1158px;
   /* outline: 2px solid tomato;
@@ -135,6 +148,16 @@ h2 {
   color: var(--brand-logo-color);
 }
 
+.main-menu-nav {
+  display: flex;
+
+  margin-left: 77px;
+}
+
+.main-menu-nav .menu-nav-li + .menu-nav-li {
+  margin-left: 40px;
+}
+
 .menu-nav {
   color: var(--text-headersecond-color);
   font-weight: 500;
@@ -149,6 +172,16 @@ h2 {
 
 .main-add {
   font-style: normal;
+}
+
+.main-address {
+  display: flex;
+
+  margin-left: 332px;
+}
+
+.main-address .main-add-li + .main-add-li {
+  margin-left: 40px;
 }
 
 .main-mail {
@@ -213,12 +246,25 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
+  gap: 24px;
+}
+
+.menu-feature-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+.li-item {
+  /* flex-basis: calc((100% -2 * 24) / 3); */
 }
 /* ==========/section1-portfolio================= */
 /* ==========section2-index===================== */
 .menu-feature {
   display: flex;
   justify-content: center;
+  column-gap: 24px;
 }
 /* ==========/section2-index===================== */
 /* ==========/HEADER====================== */
@@ -245,6 +291,7 @@ h2 {
   background-color: var(--footer-logo-color);
 
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 /* ==========/BODY======================== */
 
